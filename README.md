@@ -16,6 +16,7 @@ METHOD I
 
     (buffer).toUTF8From(charset, flag);
     (buffer).toASCIIFrom(charset, flag);
+    (buffer).iconv(fromCharset, toCharset, flag);
     (string).toCharset(charset, flag);
 
 
@@ -24,6 +25,7 @@ METHOD II
 	
 	Buffer.toUTF8From(buffer, charset, flag);
 	Buffer.toASCIIFrom(buffer, charset, flag);
+    Buffer.iconv(buffer, fromCharset, toCharset, flag);
 	String.toCharset(string, charset, flag);
 
 
